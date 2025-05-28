@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - REES</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKZD0JZ1SX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JKZD0JZ1SX');
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .events-section {
+            padding: 120px 2rem 4rem;
+        }
+        
+        .events-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: var(--gray);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .event-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eee;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .event-header {
+            background: var(--primary);
+            color: var(--black);
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .event-header h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .event-content {
+            padding: 1.5rem;
+        }
+        
+        .event-details {
+            margin-bottom: 1rem;
+        }
+        
+        .event-detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            color: var(--gray);
+        }
+        
+        .event-detail i {
+            width: 20px;
+            margin-right: 0.5rem;
+            color: var(--primary);
+        }
+        
+        .event-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--primary);
+            color: var(--black);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .event-topic {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--black);
+        }
+
+        .calendar-buttons {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .calendar-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .calendar-btn i {
+            font-size: 1.1rem;
+        }
+
+        .calendar-btn.google {
+            background-color: #fff;
+            color: #757575;
+        }
+
+        .calendar-btn.google:hover {
+            background-color: #f5f5f5;
+        }
+
+        .calendar-btn.outlook {
+            background-color: #0072C6;
+            color: white;
+        }
+
+        .calendar-btn.outlook:hover {
+            background-color: #005a9e;
+        }
+
+        .calendar-btn.apple {
+            background-color: #000;
+            color: white;
+        }
+
+        .calendar-btn.apple:hover {
+            background-color: #333;
+        }
+
+        .calendar-note {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-top: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Updated RES Logos-05 copy.png" alt="REES Logo">
+                REES
+            </a>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="signup.html" class="join-btn">Join REES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <div class="container">
+            <h1>Upcoming Events</h1>
+            <p class="events-intro">Stay up to date with upcoming REES events. From hands-on workshops to expert speakers and networking nights, we're building a lineup that brings real value to KSU students.</p>
+            
+            <div class="events-grid">
+                <div class="event-card" style="grid-column: 1 / -1; text-align: center; padding: 3rem 2rem;">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">No events at the moment</h3>
+                    <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.6;">We are currently planning our Fall 2025 events. Stay tuned for exciting opportunities to learn, network, and grow in real estate and entrepreneurship!</p>
+                    <p class="calendar-note">When events are announced, you'll be able to add them to your calendar with one click!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>REES</h3>
+                    <p>Real Estate & Entrepreneurship Society at KSU</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/reeskennesawstate" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 REES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
