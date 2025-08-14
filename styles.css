@@ -251,4 +251,10 @@ footer {
     .hero p {
         font-size: 1rem;
     }
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 } 
